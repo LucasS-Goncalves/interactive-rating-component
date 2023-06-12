@@ -1,0 +1,9 @@
+<section class="feedback">
+  <img src="../../../assets/icon-star.svg" alt="star">
+  <h1>How did we do?</h1>
+  <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+  <div *ngFor="let note of notes; let i = index">
+    <h2 (click)="onGivenNote(i)">{{ note }}</h2>
+  </div>
+  <button>SUBMIT</button>
+</section>
