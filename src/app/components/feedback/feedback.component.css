@@ -39,12 +39,12 @@
   font-weight: 400;
 }
 
-.notes_div{
+.scores_div{
   display: flex;
   gap: 15px;
 }
 
-.note_button{
+.score_button{
   background-color: hsl(210, 15%, 22%);
   color: hsl(217, 12%, 63%);
   width: 42px;
@@ -58,18 +58,18 @@
   transition: 0.3s;
 }
 
-.note_button:hover{
+.score_button:hover{
   background-color: hsl(216, 12%, 54%);
   color: hsl(0, 0%, 100%);
   transition: 0.3s;
 }
 
-.note_button:focus{
+.score_button:focus{
   background-color: hsl(25, 97%, 53%);
   color: hsl(0, 0%, 100%);
 }
 
-.note{
+.score{
   font-size: .87rem;
   font-weight: 700;
 }
@@ -126,16 +126,16 @@
     font-size: 1rem;
   }
 
-  .notes_div{
+  .scores_div{
     gap: 23px;
   }
 
-  .note_button{
+  .score_button{
     width: 51px;
     height: 51px;
   }
 
-  .note{
+  .score{
     font-size: 1rem;
   }
 
