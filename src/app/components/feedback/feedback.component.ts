@@ -12,6 +12,8 @@ export class FeedbackComponent implements OnInit{
   notes: number[] = [];
   note!: number;
 
+  undefinedNote = false;
+
   constructor(private notesService: NotesService, private router: Router){}
 
   ngOnInit(): void {
@@ -19,7 +21,13 @@ export class FeedbackComponent implements OnInit{
   }
 
   onGivenNote(note: number){
-    this.notesService.givenNote = note;
-    this.router.navigate(['thank-you'])
+    if(note === undefined){
+      this.undefinedNote = true;
+    }else{
+      console.log(note)
+      this.notesService.givenNote = note;
+      this.router.navigate(['thank-you'])
+
+    }
   }
 }
