@@ -16,7 +16,7 @@
   height: 96px;
 }
 
-.your_note_div{
+.your_score_div{
   background-color: hsl(210, 15%, 22%);
   width: 168px;
   height: 32px;
@@ -26,7 +26,7 @@
   border-radius: 20px;
 }
 
-.your_note{
+.your_score{
   color: hsl(25, 97%, 53%);
   font-size: .87rem;
   font-weight: 400;
@@ -58,12 +58,12 @@
     height: 108px;
   }
 
-  .your_note_div{
+  .your_score_div{
     width: 193px;
     height: 32px;
   }
 
-  .your_note{
+  .your_score{
     font-size: 1rem;
   }
 
