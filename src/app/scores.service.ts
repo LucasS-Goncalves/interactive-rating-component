@@ -1,14 +1,13 @@
 import { Injectable } from '@angular/core';
-import { Subject} from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
-export class NotesService {
+export class ScoresService {
 
   constructor() {}
 
-  givenNote!: number;
+  givenScore!: number;
 
-  notes: number[] = [1, 2, 3, 4, 5];
+  scores: number[] = [1, 2, 3, 4, 5];
 }
