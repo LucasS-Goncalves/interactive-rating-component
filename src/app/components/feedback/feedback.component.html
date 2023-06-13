@@ -4,11 +4,11 @@
   </div>
   <h1 class="question">How did we do?</h1>
   <p class="request">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
-  <div class="notes_div">
-    <button class="note_button" *ngFor="let pickedNote of notes" (click)="note = pickedNote">
-      <h2 class="note" >{{ pickedNote }}</h2>
+  <div class="scores_div">
+    <button class="score_button" *ngFor="let pickedScore of scores" (click)="score = pickedScore">
+      <h2 class="score" >{{ pickedScore }}</h2>
     </button>
   </div>
-  <button class="submit_button" (click)="onGivenNote(note)">SUBMIT</button>
-  <span *ngIf="undefinedNote" class="span">Please, rate our support 😄</span>
+  <button class="submit_button" (click)="onGivenScore(score)">SUBMIT</button>
+  <span *ngIf="undefinedScore" class="span">Please, rate our support 😄</span>
 </article>
