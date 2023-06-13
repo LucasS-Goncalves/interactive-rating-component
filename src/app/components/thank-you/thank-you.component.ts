@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Subscription } from 'rxjs';
 import { NotesService } from 'src/app/notes.service';
 
 @Component({
@@ -13,10 +14,7 @@ export class ThankYouComponent implements OnInit{
   constructor(private notesService: NotesService){}
 
   ngOnInit(): void {
-    this.notesService.givenNote.subscribe(
-      (note: number) => {
-        this.note = note;
-      }
-    );
+    this.note = this.notesService.givenNote;
+
   }
 }
