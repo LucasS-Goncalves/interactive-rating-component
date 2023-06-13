@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { NotesService } from 'src/app/notes.service';
+import { ScoresService } from 'src/app/scores.service';
 
 @Component({
   selector: 'app-thank-you',
@@ -9,13 +9,13 @@ import { NotesService } from 'src/app/notes.service';
 })
 export class ThankYouComponent implements OnInit{
 
-  note!:number;
+  score!:number;
 
-  constructor(private notesService: NotesService, private router: Router){}
+  constructor(private scoresService: ScoresService, private router: Router){}
 
   ngOnInit(): void {
-    this.note = this.notesService.givenNote;
-    if(this.note === undefined) {
+    this.score = this.scoresService.givenScore;
+    if(this.score === undefined) {
       this.router.navigate(['']);
     }
   }
