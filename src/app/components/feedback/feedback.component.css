@@ -95,4 +95,45 @@
   transition: 0.3s;
 }
 
+@media(min-width: 1440px){
+  .feedback{
+    width: 412px;
+    height: 416px;
+    padding: 1rem 2rem;
+  }
 
+  .image_div{
+    width: 48px;
+    height: 48px;
+  }
+
+  .star_image{
+    width: 17px;
+    height: 17px;
+  }
+
+  .question{
+    font-size: 1.8rem;
+  }
+
+  .request{
+    font-size: 1rem;
+  }
+
+  .notes_div{
+    gap: 23px;
+  }
+
+  .note_button{
+    width: 51px;
+    height: 51px;
+  }
+
+  .note{
+    font-size: 1rem;
+  }
+
+  .submit_button{
+    font-size: 1rem;
+  }
+}
