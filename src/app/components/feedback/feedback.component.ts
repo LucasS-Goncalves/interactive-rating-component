@@ -9,16 +9,15 @@ import { NotesService } from 'src/app/notes.service';
 export class FeedbackComponent implements OnInit{
 
   notes: number[] = [];
+  note!: number;
 
   constructor(private notesService: NotesService){}
 
   ngOnInit(): void {
     this.notes = this.notesService.notes;
-    console.log(this.notes)
   }
 
   onGivenNote(note: number){
-    this.notesService.givenNote.emit(this.notes[note]);
+    this.notesService.givenNote.emit(note);
   }
-
 }

@@ -1,13 +1,13 @@
-<section class="feedback">
+<article class="feedback">
   <div class="image_div">
     <img src="../../../assets/icon-star.svg" class="star_image" alt="star">
   </div>
   <h1 class="question">How did we do?</h1>
   <p class="request">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
   <div class="notes_div">
-    <button class="note_button" *ngFor="let note of notes; let i = index">
-      <h2 class="note" (click)="onGivenNote(i)">{{ note }}</h2>
+    <button class="note_button" *ngFor="let pickedNote of notes" (click)="note = pickedNote">
+      <h2 class="note" >{{ pickedNote }}</h2>
     </button>
   </div>
-  <button class="submit_button">SUBMIT</button>
-</section>
+  <button class="submit_button" (click)="onGivenNote(note)">SUBMIT</button>
+</article>

@@ -8,6 +8,6 @@ export class NotesService {
   constructor() {}
 
   givenNote = new EventEmitter<number>();
-  notes: number[] = [1, 2, 3, 4, 5];
 
+  notes: number[] = [1, 2, 3, 4, 5];
 }
