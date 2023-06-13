@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 1.3rem;
   background-color: hsl(215, 20%, 17%);
   padding: 1rem 1.5rem;
   border-radius: 15px;
@@ -44,4 +44,34 @@
   font-size: .87rem;
   font-weight: 400;
   line-height: 1.37rem;
+}
+
+@media(min-width: 1440px){
+  .thank{
+    width: 412px;
+    height: 416px;
+    gap: 1.6rem;
+  }
+
+  .image{
+    width: 162px;
+    height: 108px;
+  }
+
+  .your_note_div{
+    width: 193px;
+    height: 32px;
+  }
+
+  .your_note{
+    font-size: 1rem;
+  }
+
+  .thank_you{
+    font-size: 1.8rem;
+  }
+
+  .text{
+    font-size: 1rem;
+  }
 }
