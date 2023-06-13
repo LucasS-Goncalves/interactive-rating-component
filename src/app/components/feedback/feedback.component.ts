@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { NotesService } from 'src/app/notes.service';
+import { ScoresService } from 'src/app/scores.service';
 
 @Component({
   selector: 'app-feedback',
@@ -9,23 +9,23 @@ import { NotesService } from 'src/app/notes.service';
 })
 export class FeedbackComponent implements OnInit{
 
-  notes: number[] = [];
-  note!: number;
+  scores: number[] = [];
+  score!: number;
 
-  undefinedNote = false;
+  undefinedScore = false;
 
-  constructor(private notesService: NotesService, private router: Router){}
+  constructor(private scoresService: ScoresService, private router: Router){}
 
   ngOnInit(): void {
-    this.notes = this.notesService.notes;
+    this.scores = this.scoresService.scores;
   }
 
-  onGivenNote(note: number){
-    if(note === undefined){
-      this.undefinedNote = true;
+  onGivenScore(score: number){
+    if(score === undefined){
+      this.undefinedScore = true;
     }else{
-      console.log(note)
-      this.notesService.givenNote = note;
+      console.log(score)
+      this.scoresService.givenScore = score;
       this.router.navigate(['thank-you'])
 
     }
